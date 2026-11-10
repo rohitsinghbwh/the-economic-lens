@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Economic Lens — independent economics, public policy, research and data.">
+  <meta name="theme-color" content="#f7f8f6">
+  <title>The Economic Lens — Economics, Policy & Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="The Economic Lens home"><span class="brand-mark">EL</span><span><strong>THE ECONOMIC LENS</strong><small>ECONOMICS · POLICY · DATA</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="mainNav"><a href="#articles">Articles</a><a href="#columns">Columns</a><a href="#research">Research</a><a href="#dashboard">Data dashboard</a><a href="#about">About</a></nav>
+  <a class="header-cta" href="#newsletter">Stay informed <span>↗</span></a>
+</header>
+<main>
+  <section class="hero wrap" id="home">
+    <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> AN INDEPENDENT ECONOMICS PUBLICATION</div>
+      <h1>Understand the forces<br>shaping <em>our economy.</em></h1>
+      <p class="hero-intro">Evidence-led perspectives on the Indian and global economy. Clear analysis, original research and data that goes beyond the headlines.</p>
+      <div class="hero-actions"><a class="button dark" href="#articles">Explore the publication <span>→</span></a><a class="text-link" href="#dashboard">Explore economic data ↗</a></div>
+    </div>
+    <aside class="hero-note"><div class="note-top"><span>THE EDITOR'S NOTE</span><span>01 / 2026</span></div><div class="note-rule"></div><p>“Good economic analysis begins with better questions—and ends with evidence that can be examined.”</p><small>OUR EDITORIAL PRINCIPLE</small><div class="note-bottom"><span>INDEPENDENT</span><span>DATA-DRIVEN</span><span>INDIA-FOCUSED</span></div></aside>
+  </section>
+  <section class="ticker"><div class="ticker-inner"><span>ECONOMY</span><i>✳</i><span>PUBLIC FINANCE</span><i>✳</i><span>DEVELOPMENT</span><i>✳</i><span>FINANCIAL MARKETS</span><i>✳</i><span>GLOBAL TRADE</span><i>✳</i><span>ECONOMY</span><i>✳</i><span>PUBLIC FINANCE</span></div></section>
+  <section class="section wrap" id="articles"><div class="section-heading"><div><div class="eyebrow">01 — THE READING ROOM</div><h2>Ideas worth <em>examining.</em></h2></div><a class="text-link" href="#articles">All articles ↗</a></div>
+    <div class="feature-grid"><article class="feature-card"><div class="feature-art art-growth"><span class="art-label">ECONOMIC GROWTH</span><div class="growth-lines"><b></b><b></b><b></b><b></b><b></b></div><span class="art-number">01</span></div><div class="article-meta"><span>EXPLAINER</span><span>8 MIN READ</span></div><h3>Why productivity—not just investment—matters for India's next growth phase</h3><p class="muted">A closer look at capital deepening, total factor productivity and the sources of long-run growth.</p><a class="read-link" href="#article-growth">Read analysis <span>→</span></a></article>
+      <article class="feature-card"><div class="feature-art art-inflation"><span class="art-label">MONETARY ECONOMICS</span><div class="inflation-ring"><span>CPI</span></div><span class="art-number">02</span></div><div class="article-meta"><span>MACROECONOMICS</span><span>6 MIN READ</span></div><h3>Understanding India's inflation puzzle: food, core prices and expectations</h3><p class="muted">How supply shocks, the consumption basket and monetary transmission interact.</p><a class="read-link" href="#article-inflation">Read analysis <span>→</span></a></article>
+      <article class="feature-card"><div class="feature-art art-trade"><span class="art-label">GLOBAL ECONOMY</span><div class="trade-orbit"><i></i><i></i><i></i></div><span class="art-number">03</span></div><div class="article-meta"><span>INTERNATIONAL</span><span>10 MIN READ</span></div><h3>Trade, supply chains and the changing geography of manufacturing</h3><p class="muted">What global value chains reveal about India's opportunities and constraints.</p><a class="read-link" href="#article-trade">Read analysis <span>→</span></a></article>
+    </div>
+  </section>
+  <section class="columns-band" id="columns"><div class="wrap columns-layout"><div><div class="eyebrow">02 — THE COLUMNISTS</div><h2>Perspectives with<br><em>a point of view.</em></h2><p class="muted">Opinion and commentary on policy choices, institutions and the economic questions shaping public debate.</p><a class="button outline" href="#columns-list">Explore columns <span>→</span></a></div><div class="column-list" id="columns-list"></div></div></section>
+  <section class="section wrap" id="research"><div class="section-heading"><div><div class="eyebrow">03 — RESEARCH & PUBLICATIONS</div><h2>From evidence to <em>insight.</em></h2></div><span class="section-aside">WORKING PAPERS · POLICY BRIEFS · DATA NOTES</span></div><div class="research-list" id="research-list"></div></section>
+  <section class="dashboard-band" id="dashboard"><div class="wrap"><div class="section-heading dashboard-heading"><div><div class="eyebrow">04 — THE DATA DESK</div><h2>India, in <em>indicators.</em></h2><p class="muted">Explore selected macroeconomic indicators. Data is retrieved from the World Bank API where available.</p></div><div class="data-source"><span class="live-dot"></span><span id="dataStatus">CONNECTING TO WORLD BANK</span><small>COUNTRY: INDIA · IND</small></div></div>
+    <div class="indicator-grid"><div class="indicator-card"><span>GDP GROWTH</span><strong id="gdpValue">—</strong><small id="gdpYear">Annual %</small><div class="mini-spark" id="gdpSpark"></div></div><div class="indicator-card"><span>INFLATION</span><strong id="inflationValue">—</strong><small id="inflationYear">CPI, annual %</small><div class="mini-spark" id="inflationSpark"></div></div><div class="indicator-card"><span>UNEMPLOYMENT</span><strong id="unemploymentValue">—</strong><small id="unemploymentYear">% of labour force</small><div class="mini-spark" id="unemploymentSpark"></div></div><div class="indicator-card"><span>TRADE (% OF GDP)</span><strong id="tradeValue">—</strong><small id="tradeYear">Exports + imports</small><div class="mini-spark" id="tradeSpark"></div></div></div>
+    <div class="chart-panel"><div class="chart-head"><div><span class="chart-kicker">LONG-RUN PERFORMANCE</span><h3>GDP growth, annual</h3></div><span class="chart-unit">ANNUAL % CHANGE</span></div><div class="chart-area"><div class="y-labels"><span>10%</span><span>5%</span><span>0%</span><span>-5%</span></div><svg id="gdpChart" viewBox="0 0 800 230" preserveAspectRatio="none" role="img" aria-label="India GDP growth chart"><text x="400" y="115" text-anchor="middle" fill="#777">Loading World Bank data…</text></svg></div><div class="chart-foot"><span id="chartRange">WORLD BANK · GDP GROWTH (ANNUAL %)</span><span id="chartUpdated">SOURCE: API</span></div></div>
+    <div class="dashboard-bottom"><p><strong>Read the data carefully.</strong> World Bank series are annual and may be revised. The latest available year differs by indicator. Values are not real-time market data.</p><a class="text-link" href="https://data.worldbank.org/country/india" target="_blank" rel="noopener">World Bank India data ↗</a></div>
+  </div></section>
+  <section class="newsletter-section wrap" id="newsletter"><div><div class="eyebrow">THE ECONOMIC LENS BRIEFING</div><h2>Ideas, not <em>noise.</em></h2><p class="muted">A future space for a periodic digest of new analysis, research and data updates.</p></div><div class="newsletter-placeholder"><span class="newsletter-icon">✳</span><div><strong>Stay connected</strong><small>Newsletter signup can be added later using a free email service.</small></div><a href="mailto:hello@youremail.example?subject=The%20Economic%20Lens" aria-label="Contact by email">↗</a></div></section>
+  <section class="about-band" id="about"><div class="wrap about-layout"><div><div class="eyebrow">05 — ABOUT THE PUBLICATION</div><h2>Economics for a<br><em>more informed</em> debate.</h2></div><div><p>The Economic Lens is an independent publication focused on economics, public policy and development. It aims to make complex economic questions accessible without sacrificing analytical depth.</p><p class="muted">Our approach: explain the mechanism, examine the evidence, identify the trade-offs and make the sources visible.</p><a class="text-link" href="mailto:hello@youremail.example">Get in touch ↗</a></div></div></section>
+</main>
+<dialog class="article-dialog" id="articleDialog"><button class="dialog-close" id="dialogClose" aria-label="Close article">×</button><div class="eyebrow" id="dialogCategory">ARTICLE</div><h2 id="dialogTitle"></h2><div class="article-meta" id="dialogMeta"></div><div class="dialog-body" id="dialogBody"></div></dialog>
+<footer><div class="wrap footer-layout"><a class="brand footer-brand" href="#home"><span class="brand-mark">EL</span><span><strong>THE ECONOMIC LENS</strong><small>ECONOMICS · POLICY · DATA</small></span></a><span>INDEPENDENT THINKING. EVIDENCE FIRST.</span><span>© 2026 THE ECONOMIC LENS</span></div></footer>
+<script src="assets/app.js"></script>
+</body></html>
